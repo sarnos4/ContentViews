@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/newItem"
+        android:title="New Activity"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:checkable="true"
+        android:checked="true"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_search_code"
+                    android:title="Settings -1"
+                    />
+                <item
+                    android:id="@+id/menu_search_code1"
+                    android:title="Settings -2"
+                    />
+                <item android:id="@+id/menu_search_code2"
+                    android:title="Settings -3"
+                    />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/copyItem"
+        android:title="Copy"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/cutItem"
+        android:title="Cut"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        />
+</menu>
